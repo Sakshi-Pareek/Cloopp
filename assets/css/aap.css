@@ -55,9 +55,9 @@
 .max_w_448 {
   max-width: 448px;
 }
-.arrow{
+.arrow {
   bottom: 33%;
-    left: -24%;
+  left: -24%;
 }
 /* ------------------------------------------now-as-easy-------------------------------------- */
 .max_w_675 {
@@ -305,9 +305,9 @@
   .recycle_bottom_layer {
     bottom: -4%;
   }
-  .arrow{
+  .arrow {
     bottom: 33%;
-      left: -27%;
+    left: -27%;
   }
 }
 @media (max-width: 1200px) {
