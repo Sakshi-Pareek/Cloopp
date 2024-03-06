@@ -36,6 +36,21 @@
   background-repeat: no-repeat;
   background-position: right;
 }
+.header_img {
+  -webkit-animation: popupdown 3s infinite linear;
+  animation: popupdown 3s linear infinite;
+}
+@-webkit-keyframes popupdown {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(5%);
+    transform: translateY(5%);
+  }
+}
 .hero_height {
   height: calc(100vh-87px);
 }
@@ -58,6 +73,19 @@
 .arrow {
   bottom: 33%;
   left: -24%;
+  -webkit-animation: arrow 5s linear infinite;
+  animation: arrow 5s linear infinite;
+}
+@-webkit-keyframes arrow {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+  }
 }
 /* ------------------------------------------now-as-easy-------------------------------------- */
 .max_w_675 {
@@ -100,7 +128,6 @@
 }
 #recycling .accordion-button:not(.collapsed):after {
   background-image: url(/assets/images/svg/minusIcon.svg) !important;
-  /* transform: var(--bs-accordion-btn-icon-transform); */
 }
 #recycling .accordion-button:after {
   background-image: url(/assets/images/svg/PlusIcon.svg) !important;
@@ -151,9 +178,11 @@
 .join_btn {
   padding: 15px 32px;
   border-radius: 10px;
+}
+.duration {
   transition: all 0.2s linear;
 }
-.join_btn:hover {
+.zoom:hover {
   transform: scale(0.95);
 }
 .box_input {
