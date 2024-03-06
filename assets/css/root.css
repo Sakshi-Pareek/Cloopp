@@ -8,7 +8,7 @@
 }
 /* ----------------------------color------------------------ */
 .text_black01 {
-  color: #0d0d0d;
+  color: #0d0d0d !important;
 }
 .text_black02 {
   color: #15231f;
