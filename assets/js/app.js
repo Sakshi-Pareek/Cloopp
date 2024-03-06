@@ -9,7 +9,7 @@ const d = new Date();
 document.getElementById("year_change").innerHTML = d.getFullYear();
 // =========================================preloader=======================================
 setTimeout(() => {
-    document.getElementById("preloader").classList.add("opacity_0")
+    document.getElementById("preloader").classList.add("opacity-0")
     document.getElementById("preloader").classList.add("pointer_event_none")
     document.body.classList.remove("overflow-hidden")
     window.scrollTo(0, 0);

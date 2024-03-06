@@ -23,24 +23,23 @@
 .lh_130 {
   line-height: 130%;
 }
+.z_index_1neg {
+  z-index: -1;
+}
+.duration {
+  transition: all 0.3s linear;
+}
 .cursor_pointer {
   cursor: pointer;
 }
 .bg_blue {
   background-color: #0073b1;
 }
-/* ----------------------------------header-section-------------------------------------- */
-.bg_hero {
-  background-image: url("../images/png/Hero-Bg.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: right;
-}
-.header_img {
+.image_animation {
   -webkit-animation: popupdown 3s infinite linear;
   animation: popupdown 3s linear infinite;
 }
-@-webkit-keyframes popupdown {
+@keyframes popupdown {
   0%,
   100% {
     -webkit-transform: translateY(0);
@@ -51,24 +50,24 @@
     transform: translateY(5%);
   }
 }
+/* ----------------------------------header-section-------------------------------------- */
+.bg_hero {
+  background-image: url("../images/png/Hero-Bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+}
 .hero_height {
   height: calc(100vh-87px);
 }
 .nav_layer {
-  background-color: white;
   opacity: 2%;
-}
-.hero_layer {
-  bottom: 0;
-}
-.hero_spacing {
-  padding-top: 140px;
 }
 .gap_36 {
   gap: 36px;
 }
-.max_w_448 {
-  max-width: 448px;
+.hero_layer {
+  bottom: 0;
 }
 .arrow {
   bottom: 33%;
@@ -88,12 +87,6 @@
   }
 }
 /* ------------------------------------------now-as-easy-------------------------------------- */
-.max_w_675 {
-  max-width: 675px;
-}
-.max_w_357 {
-  max-width: 357px;
-}
 .left_shape_w {
   max-width: 295px;
 }
@@ -104,9 +97,6 @@
   background-color: #15231f;
 }
 /* ----------------------------------------recycling--------------------------------------- */
-.max_w_512 {
-  max-width: 512px;
-}
 .recycle_layer {
   top: -6%;
 }
@@ -115,7 +105,6 @@
   max-height: 140px;
 }
 #recycling .accordion {
-  max-width: 513px !important;
   --bs-accordion-border-color: transparent !important;
   --bs-accordion-btn-focus-box-shadow: none !important;
 }
@@ -133,9 +122,6 @@
   background-image: url(/assets/images/svg/PlusIcon.svg) !important;
 }
 /* -----------------------------------------faq----------------------------------------------- */
-.max_w_810 {
-  max-width: 810px;
-}
 #faq .accordion {
   --bs-accordion-btn-padding-y: 16px !important;
 }
@@ -159,9 +145,6 @@
 #Faq .accordion-button::after {
   background-image: url(/static/media/uparrow.50d09ca….svg) !important;
 }
-.FaqRightShape {
-  z-index: -1;
-}
 /* -------------------------------------------subscribe------------------------------------- */
 .subscribetoplayer {
   top: -4%;
@@ -178,9 +161,6 @@
 .join_btn {
   padding: 15px 32px;
   border-radius: 10px;
-}
-.duration {
-  transition: all 0.2s linear;
 }
 .zoom:hover {
   transform: scale(0.95);
@@ -206,15 +186,8 @@
 .footer_line {
   height: 0.5px;
 }
-.footer_icon {
-  transition: all 0.3s linear !important;
-}
 .footer_icon:hover {
   transform: scale(1.2);
-}
-.under_line,
-.footer_link {
-  transition: all 0.2s linear;
 }
 .under_line:hover,
 .footer_link:hover {
@@ -248,13 +221,10 @@
 }
 #scroll {
   display: none;
-  cursor: pointer;
-  transition: all 0.2s linear;
   right: 10px;
   bottom: 10px;
   width: 45px;
   height: 45px;
-  background-color: #0073b1;
   border: 2px solid white !important;
   border-radius: 50%;
   z-index: 15;
@@ -301,9 +271,6 @@
     transform: translateY(-6%);
   }
 }
-.opacity_0 {
-  opacity: 0 !important;
-}
 .pointer_event_none {
   pointer-events: none;
 }
@@ -312,11 +279,8 @@
 }
 /* --------------------------------------media-quaries-------------------------------------- */
 @media (max-width: 1600px) {
-  .hero_spacing {
-    padding-top: 0px;
-  }
   .hero_layer {
-    bottom: -2px;
+    bottom: -2px !important;
   }
 }
 @media (max-width: 1440px) {
@@ -342,9 +306,6 @@
 @media (max-width: 1200px) {
   .hero_height {
     height: unset !important;
-  }
-  .hero_layer {
-    bottom: -1px !important;
   }
   .hero_img_my {
     margin-bottom: 25px;
@@ -398,15 +359,6 @@
   }
   .cross .line2 {
     transform: rotate(-50deg) translateY(-50%);
-  }
-  .max_w_357 {
-    max-width: unset;
-  }
-  #recycling .accordion {
-    max-width: unset !important;
-  }
-  .max_w_512 {
-    max-width: unset;
   }
   .recycle_layer {
     top: -1%;
