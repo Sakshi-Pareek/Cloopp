@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Over+the+Rainbow&display=swap");
+
+.ff_outfit {
+  font-family: "Outfit", sans-serif;
+}
+.ff_rainbow {
+  font-family: "Over the Rainbow", cursive;
+}
+/* ----------------------------color------------------------ */
+.text_black01 {
+  color: #0d0d0d;
+}
+.text_black02 {
+  color: #15231f;
+}
+.text_primary {
+  color: #f8b762;
+}
+.text_secondary {
+  color: #0073b1;
+}
+/*----------------------------root---------------------------*/
+:root {
+  --fs-6sm: 16px;
+  --fs-8sm: 18.92px;
+  --fs-1md: 21.62px;
+  --fs-4md: 24px;
+  --fs-2lg: 32px;
+  --fs-2xl: 52px;
+  --fs-2xxl: 62.4px;
+  --fs-4xxl: 64px;
+  --fs-xxxl: 80px;
+}
+.fs_6sm {
+  font-size: var(--fs-6sm);
+}
+.fs_8sm {
+  font-size: var(--fs-8sm);
+}
+.fs_1md {
+  font-size: var(--fs-1md);
+}
+.fs_4md {
+  font-size: var(--fs-4md);
+}
+.fs_2lg {
+  font-size: var(--fs-2lg);
+}
+.fs_2xl {
+  font-size: var(--fs-2xl);
+}
+.fs_2xxl {
+  font-size: var(--fs-2xxl);
+}
+.fs_4xxl {
+  font-size: var(--fs-4xxl);
+}
+.fs_xxxl {
+  font-size: var(--fs-xxxl);
+}
+@media (max-width: 1201px) {
+  :root {
+    --fs-2xl: 50px;
+    --fs-2xxl: 60px;
+    --fs-4xxl: 62px;
+    --fs-xxxl: 69px;
+  }
+}
+@media (max-width: 992px) {
+  :root {
+    --fs-2lg: 30px;
+    --fs-2xl: 46px;
+    --fs-2xxl: 56px;
+    --fs-4xxl: 58px;
+    --fs-xxxl: 64px;
+  }
+}
+@media (max-width: 768px) {
+  :root {
+    --fs-2lg: 28px;
+    --fs-2xl: 40px;
+    --fs-2xxl: 50px;
+    --fs-4xxl: 54px;
+    --fs-xxxl: 58px;
+  }
+}
+@media (max-width: 576px) {
+  :root {
+    --fs-6sm: 14px;
+    --fs-8sm: 16px;
+    --fs-1md: 18px;
+    --fs-4md: 20px;
+    --fs-2lg: 24px;
+    --fs-2xl: 34px;
+    --fs-2xxl: 38px;
+    --fs-4xxl: 40px;
+    --fs-xxxl: 43px;
+  }
+}
