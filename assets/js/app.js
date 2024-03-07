@@ -1,4 +1,4 @@
-// ---------------------------------------nav-bar--------------------------------------
+// =======================================nav-bar=====================================
 function opennav() {
     document.getElementById("navbar").classList.toggle("end-0");
     document.body.classList.toggle('overflow_hidden');
@@ -7,19 +7,19 @@ function opennav() {
 // ===================================DEFINE-SCRIPT-YEAR ==============================
 const d = new Date();
 document.getElementById("year_change").innerHTML = d.getFullYear();
-// =========================================preloader=======================================
+// ========================================preloader===================================
 setTimeout(() => {
     document.getElementById("preloader").classList.add("opacity-0")
     document.getElementById("preloader").classList.add("pointer_event_none")
     document.body.classList.remove("overflow-hidden")
     window.scrollTo(0, 0);
 }, 3000);
-// ===============================DEFINE AOS LINK=========================================== */
+// ====================================DEFINE AOS LINK=================================
 AOS.init({
     duration: 1000,
     once: true,
 });
-// ===================================BACK TO TOP========================================
+// =======================================BACK TO TOP==================================
 document.addEventListener('DOMContentLoaded', function () {
     var backToTopBtn = document.getElementById('scroll');
 
